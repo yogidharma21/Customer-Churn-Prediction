@@ -10,6 +10,20 @@ End-to-end data analytics & machine learning project untuk memprediksi customer 
 
 Perusahaan telekomunikasi kehilangan pendapatan setiap kali pelanggan berhenti berlangganan (churn), namun tidak semua pelanggan memiliki risiko yang sama. Project ini membangun model klasifikasi untuk memprediksi kemungkinan seorang pelanggan akan churn, sekaligus mengidentifikasi faktor-faktor yang paling berasosiasi dengan keputusan tersebut — sehingga tim retensi dapat memprioritaskan pelanggan berisiko tinggi alih-alih menyasar seluruh basis pelanggan secara merata.
 
+## 🚀 Live Dashboard
+
+Project ini juga tersedia dalam bentuk interactive dashboard menggunakan **Streamlit**.
+
+🔗 **[Open Customer Churn Dashboard →](https://customer-churn-prediction-44bkaa6oyfwyflshxiajsk.streamlit.app/)**
+
+Dashboard menyediakan:
+
+- 📊 **Overview** — customer churn rate, contract, internet service, tenure, dan monthly charges.
+- 🔮 **Churn Prediction** — memasukkan karakteristik pelanggan untuk mendapatkan probabilitas churn dan risk level.
+- 💡 **Business Insights** — key findings, model performance, threshold analysis, dan rekomendasi retensi.
+
+> **Note:** Dashboard ini merupakan prototype predictive analytics. Hasil prediksi digunakan sebagai alat bantu pengambilan keputusan, bukan keputusan otomatis.
+
 ## Dataset
 
 - **Sumber:** [Telco Customer Churn Dataset](https://www.kaggle.com/datasets/blastchar/telco-customer-churn) (Kaggle, via `kagglehub`)
