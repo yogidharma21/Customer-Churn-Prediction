@@ -73,9 +73,8 @@ BASE_DIR = Path(__file__).resolve().parent
 DATA_PATH = (
     BASE_DIR
     / "data"
-    / "WA_Fn-UseC_-Telco-Customer-Churn.csv"
+    / "telco_customer_churn_cleaned.csv"
 )
-
 
 # ============================================================
 # LOAD DATA
@@ -86,14 +85,12 @@ def load_data():
 
     if not DATA_PATH.exists():
         st.error(
-            "Dataset tidak ditemukan.\n\n"
-            "Pastikan file berada di:\n"
-            "`data/WA_Fn-UseC_-Telco-Customer-Churn.csv`"
+            "Dataset tidak ditemukan. "
+            "Pastikan file ada di folder data."
         )
-
         st.stop()
 
-    data = pd.read_csv(DATA_PATH)
+    return pd.read_csv(DATA_PATH)
 
     # Convert TotalCharges
     data["TotalCharges"] = pd.to_numeric(
